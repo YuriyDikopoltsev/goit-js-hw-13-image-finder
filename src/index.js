@@ -1,2 +1,3 @@
-import './css/styles.css';
-import './js/image-search.js';
+import './css/common.css';
+
+import './js/image-finder';

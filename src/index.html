@@ -1,25 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Homework 13-image finder</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <title>goit-js-hw-13-image-finder</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <div id="root">
-      <p class="slogan">Photo is the reflection of reality</p>
-      <form class="searchForm" id="searchForm"></form>
-      <input  name="query" class="searchInput" type="text" name="query" autocomplete="off" placeholder="Search in progress..."/>
-        <button type="submit" class="searchBtn btn">Search</button>
-      </form> 
-        <p class='no-result is-hidden'>Sorry, no results were found.</p>
-        <ul class="gallery">
-        </ul>
+      <p class="quote">Photo is the reflection of reality</p>
+      <form class="search-form" id="search-form">
+        <input
+          name="query"
+          class="search-input"
+          type="text"
+          autocomplete="off"
+          placeholder="Find yours..."
+        />
+        <button type="submit" class="search-btn btn">Search</button>
+      </form>
+      <p class="no-result is-hidden">
+        Can't find the picture. Change tag please!
+      </p>
+      <ul class="gallery"></ul>
 
-        <button type="button" class="btn is-hidden" data-action="load-extra">Load more</button>
+      <button type="button" class="btn is-hidden" data-action="load-more">
+        Load more
+      </button>
     </div>
   </body>
 </html>
-
